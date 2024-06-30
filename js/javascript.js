@@ -1,10 +1,14 @@
 var error_ = false;
+
 document.addEventListener("submit", function (e) {
-  const birthDateString = document.getElementById("birth-date").value;
+  const birthDateObj = document.getElementById("birth-date");
+  const birthDateString = birthDateObj.value;
+  birthDateObj.addEventListener("change", FixError);
 
   age = CheckAge(birthDateString);
-
-  const bootcampCode = document.getElementById("bootcamp-code").value;
+  const bootcampCodeObj = document.getElementById("bootcamp-code");
+  const bootcampCode = bootcampCodeObj.value;
+  bootcampCodeObj.addEventListener("change", FixError);
   CheckBootCampCode(bootcampCode);
   if (!error_) {
     const firstName = document.getElementById("first-name").value;
@@ -42,4 +46,7 @@ function CheckBootCampCode(bootcampCode) {
       error_ = true;
     }
   }
+}
+function FixError() {
+  error_ = false;
 }
