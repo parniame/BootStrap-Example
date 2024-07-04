@@ -9,100 +9,79 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="container mt-5  p-5 pb-2 bg-light border border-dark w-25">
-      
-      <form action="" method="post"  class="w-75 mx-auto">
+    <div class="container mt-5 p-5 pb-2 bg-light border border-dark w-25">
+      <form action="" method="post" class="w-75 mx-auto">
         <img
-        class="col-1  py-3   icon-large  "
-        src="icons\bootstrap-purple.jfif"
-        alt="bootstrap icon"
-      />
-      <h1 class="h1 my-3  ">Please sign in</h1>
-          <div class="border form-control  my-2  ">
-            <label class="form-label" for="first-name"></label><small class="text-muted">First name</small> </label>
-            <input 
-            
-              class="border-0 form-control p-0"
-              type="text"
-              name="first-name"
-              id="first-name"
-              required
-              minlength="3" 
-            />
-          </div>
-          
-          <div class="border form-control my-2 ">
-            <label class="form-label" for="last-name">
+          class="col-1 py-3 icon-large"
+          src="icons\bootstrap-purple.jfif"
+          alt="bootstrap icon"
+        />
+        <h1 class="h1 my-3">Please sign in</h1>
 
-            </label><small class="text-muted">last name</small> 
-            </label>
-            <input 
-           
-              class="border-0 form-control p-0"
-              type="text"
-              name="last-name"
-              id="last-name"
-              required
-              minlength="3" 
-            />
-          </div>
-          <div class="border form-control my-2 ">
-            <label class="form-label" for="birth-date">
+        <div class="form-floating my-2">
+          <input
+            class="form-control"
+            type="text"
+            name="first-name"
+            id="first-name"
+            placeholder=""
+            required
+            minlength="3"
+          />
+          <label for="first-name"> First name </label>
+        </div>
 
-            </label><small class="text-muted">Birth date</small> 
-            </label>
-            
-            <input
-           
-              class="border-0 form-control p-0 "
-              type="date"
-              name="birth-date"
-              value="2002-09-16"
-              id="birth-date"
-            />
-          </div>
-          <div class="border form-control my-2  ">
-            <label class="form-label" for="bootcamp-code">
+        <div class="form-floating my-2">
+          <input
+            class="form-control"
+            type="text"
+            name="last-name"
+            id="last-name"
+            required
+            placeholder=""
+            minlength="3"
+          />
+          <label for="last-name">Last name</label>
+        </div>
+        <div class="form-floating my-2">
+          <input
+            class="form-control"
+            type="date"
+            name="birth-date"
+            value="2002-09-16"
+            id="birth-date"
+          />
+          <label for="birth-date">Birth date</label>
+        </div>
+        <div class="form-floating my-2">
+          <input
+            class="form-control"
+            type="number"
+            name="bootcamp-code"
+            id="bootcamp-code"
+            placeholder=""
+          />
+          <label for="bootcamp-code"> Bootcamp Code </label>
+        </div>
+        <div class="form-floating my-2">
+          <input
+            class="form-control"
+            type="email"
+            name="email"
+            id="email"
+            placeholder=""
+          />
+          <label for="email"> Email Address </label>
+        </div>
+        <button class="btn btn-primary w-100" type="submit">Sign up</button>
 
-            </label><small class="text-muted">Bootcamp Code</small> 
-            </label>
-            
-            <input
-           
-              class="border-0 form-control p-0"
-              type="number"
-              name="bootcamp-code"
-              id="bootcamp-code"
-            />
-          </div>
-          <div class="border form-control my-2  ">
-            <label class="form-label" for="email">
-
-            </label><small class="text-muted">Email Address</small> 
-            </label>
-            
-            <input
-           
-              class="border-0 form-control p-0"
-              type="email"
-              name="email"
-              id="email"
-            />
-          </div>
-          <button class="btn btn-primary w-100" type="submit">Sign up</button>
-
-
-
-
-          <p class="my-5 text-muted"><small>&copy 2017-2024</small></p>
+        <p class="my-5 text-muted"><small>&copy 2017-2024</small></p>
       </form>
-      
-      
     </div>
-    <script src="js/javascript.js" class="alert "></script>
+    <script src="js/javascript.js" class="alert"></script>
   </body>
 </html>
